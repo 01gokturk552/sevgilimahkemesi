@@ -1,0 +1,30 @@
+{
+  "name": "mobile",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "expo-router/entry",
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "expo": "~57.0.27",
+    "expo-constants": "~57.0.21",
+    "expo-linking": "~57.0.12",
+    "expo-router": "~57.0.25",
+    "expo-status-bar": "~57.0.1",
+    "react": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-screens": "~4.26.0"
+  },
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "test:engine": "node --test src/game.test.js",
+    "check:android-bundle": "expo export --platform android --output-dir .expo/export-check",
+    "check:ios-bundle": "expo export --platform ios --output-dir .expo/ios-export-check",
+    "apk": "npx eas-cli@latest build --platform android --profile preview",
+    "build:stores": "npx eas-cli@latest build --platform all --profile production"
+  },
+  "private": true
+}

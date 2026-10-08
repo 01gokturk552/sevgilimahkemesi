@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "Sevgili Mahkemesi",
+    "slug": "sevgili-mahkemesi",
+    "scheme": "sevgilimahkemesi",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/app-logo.png",
+    "backgroundColor": "#0C0D10",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sevgilimahkemesi.app"
+    },
+    "android": {
+      "package": "com.sevgilimahkemesi.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#0C0D10",
+        "foregroundImage": "./assets/app-logo.png"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [["expo-router", { "root": "src/app" }]],
+    "extra": {
+      "eas": {
+        "projectId": "54f31b74-a808-4e17-ac30-bc1a909166ec"
+      }
+    }
+  }
+}
